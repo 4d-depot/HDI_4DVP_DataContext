@@ -1,0 +1,371 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload",
+		"onTimer",
+		"onBeginDragOver",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 28,
+					"left": 18,
+					"width": 1020,
+					"height": 800,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"Trace": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 798,
+					"left": 29,
+					"width": 117,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"sizingY": "move"
+				},
+				"VPCurrentPeople": {
+					"type": "view",
+					"left": 573,
+					"top": 175,
+					"width": 444,
+					"height": 509,
+					"userInterface": "none",
+					"withFormulaBar": false,
+					"method": "ObjectMethods/VPCurrentPeople.4dm",
+					"events": [
+						"onVPReady"
+					]
+				},
+				"VPPeople": {
+					"type": "view",
+					"left": 29,
+					"top": 175,
+					"width": 988,
+					"height": 610,
+					"userInterface": "none",
+					"withFormulaBar": false,
+					"method": "ObjectMethods/VPPeople.4dm",
+					"events": [
+						"onVPReady"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"information": {
+					"type": "input",
+					"top": 67,
+					"left": 56,
+					"width": 966,
+					"height": 640,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[0].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Input8": {
+					"type": "input",
+					"left": 153,
+					"top": 254,
+					"width": 236,
+					"height": 16,
+					"dataSource": "Form:C1466.currentPeople.Firstname",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Input9": {
+					"type": "input",
+					"left": 153,
+					"top": 298,
+					"width": 236,
+					"height": 16,
+					"dataSource": "Form:C1466.currentPeople.Lastname",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Input10": {
+					"type": "input",
+					"left": 153,
+					"top": 342,
+					"width": 236,
+					"height": 16,
+					"dataSource": "Form:C1466.currentPeople.Address",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Input11": {
+					"type": "input",
+					"left": 153,
+					"top": 387,
+					"width": 236,
+					"height": 16,
+					"dataSource": "Form:C1466.currentPeople.ZipCode",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Input12": {
+					"type": "input",
+					"left": 153,
+					"top": 432,
+					"width": 236,
+					"height": 16,
+					"dataSource": "Form:C1466.currentPeople.City",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Input13": {
+					"type": "input",
+					"left": 153,
+					"top": 477,
+					"width": 236,
+					"height": 16,
+					"dataSource": "Form:C1466.currentPeople.Country",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Input14": {
+					"type": "input",
+					"left": 153,
+					"top": 522,
+					"width": 236,
+					"height": 16,
+					"dataSource": "Form:C1466.currentPeople.Phone",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Input15": {
+					"type": "input",
+					"left": 153,
+					"top": 567,
+					"width": 236,
+					"height": 16,
+					"dataSource": "Form:C1466.currentPeople.email",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte5": {
+					"type": "text",
+					"text": "Modify the information below and see how the View Pro area is updated thanks to the VP SET DATA CONTEXT command:",
+					"top": 189,
+					"left": 27,
+					"width": 390,
+					"height": 57,
+					"fontSize": 14,
+					"fontWeight": "bold"
+				},
+				"Bouton4": {
+					"type": "button",
+					"text": "Update VP area    =>",
+					"top": 309,
+					"left": 413,
+					"width": 140,
+					"height": 40,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Bouton4.4dm"
+				},
+				"Bouton5": {
+					"type": "button",
+					"text": "<=   Update inputs",
+					"top": 486,
+					"left": 413,
+					"width": 140,
+					"height": 40,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Bouton5.4dm"
+				},
+				"Texte2": {
+					"type": "text",
+					"text": "Modify the information in the View Pro area below and see how the input objects are updated thanks to the VP Get data context command:",
+					"top": 119,
+					"left": 581,
+					"width": 440,
+					"height": 57,
+					"fontSize": 14,
+					"fontWeight": "bold"
+				},
+				"Text": {
+					"type": "text",
+					"text": "First name",
+					"top": 255,
+					"left": 29,
+					"width": 132,
+					"height": 15
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Last name",
+					"top": 299,
+					"left": 29,
+					"width": 132,
+					"height": 15
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Address",
+					"top": 343,
+					"left": 29,
+					"width": 132,
+					"height": 15
+				},
+				"Text3": {
+					"type": "text",
+					"text": "Zip code",
+					"top": 388,
+					"left": 29,
+					"width": 132,
+					"height": 15
+				},
+				"Text4": {
+					"type": "text",
+					"text": "City",
+					"top": 433,
+					"left": 29,
+					"width": 132,
+					"height": 15
+				},
+				"Text5": {
+					"type": "text",
+					"text": "Phone",
+					"top": 523,
+					"left": 29,
+					"width": 132,
+					"height": 15
+				},
+				"Text6": {
+					"type": "text",
+					"text": "Email",
+					"top": 568,
+					"left": 29,
+					"width": 132,
+					"height": 15
+				},
+				"Text7": {
+					"type": "text",
+					"text": "Country",
+					"top": 478,
+					"left": 29,
+					"width": 132,
+					"height": 15
+				}
+			}
+		},
+		{
+			"objects": {
+				"Bouton2": {
+					"type": "button",
+					"text": "Inject the data context",
+					"top": 133,
+					"left": 29,
+					"width": 200,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Bouton2.4dm"
+				},
+				"Bouton3": {
+					"type": "button",
+					"text": "Erase data context",
+					"top": 133,
+					"left": 260,
+					"width": 200,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Bouton3.4dm"
+				},
+				"information1": {
+					"type": "input",
+					"top": 66,
+					"left": 31,
+					"width": 986,
+					"height": 48,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[2].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"geometryStamp": 4168,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"width": 1039,
+	"height": 829
+}

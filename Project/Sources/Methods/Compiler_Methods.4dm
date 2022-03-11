@@ -1,0 +1,12 @@
+//%attributes = {"invisible":true}
+C_LONGINT:C283(00_Start; $1)
+C_TEXT:C284(CreateFieldListJSONSchema; $0)
+C_COLLECTION:C1488(CreateFieldListJSONSchema; $1)
+C_BOOLEAN:C305(InitVisibleObjects; $1)
+C_TEXT:C284(PictureCellStyle; $1)
+C_LONGINT:C283(PictureCellStyle; $2)
+C_LONGINT:C283(PictureCellStyle; $3)
+C_LONGINT:C283(PictureCellStyle; $4)
+C_LONGINT:C283(PictureCellStyle; $5)
+C_TEXT:C284(VPSelectionUnit; $1)
+C_LONGINT:C283(VPSelectionUnit; $2)
