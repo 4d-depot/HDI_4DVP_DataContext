@@ -12,3 +12,4 @@ VP SET DATA CONTEXT($area; ds:C1482.People.all().toCollection(); New object:C147
 
 // Resize automatically the columns
 VP COLUMN AUTOFIT(VP Column($area; 0; 15))
+VP SET ROW ATTRIBUTES(VP Column($area; 15); New object:C1471("height"; 50))
